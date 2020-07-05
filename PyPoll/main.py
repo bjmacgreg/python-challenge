@@ -60,7 +60,7 @@ print(votes_by_county)
 
 #Print results to text file
 def main():
-    f=open("PyPoll.txt", "w+")
+    f=open("/Users/bmacgreg/Documents/Bootcamp/Homework_3/python-challenge/PyPoll/Analysis/PyPoll.txt", "w+")
     f.write(f"Election Results\r\n")
     f.write(f"-------------------------\r\n")
     f.write(f"Total Votes: {votes_cast}\r\n")

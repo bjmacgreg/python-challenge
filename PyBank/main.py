@@ -3,6 +3,7 @@
 
 #dependencies
 import pandas as pd
+import os.path
 
 #import csv, convert to df
 data_file = "Resources/budget_data.csv"
@@ -50,8 +51,9 @@ print(f"Greatest Increase in Profits: {date[max]} (${int(change[max])})")
 print(f"Greatest Decrease in Profits: {date[min]} (${int(change[min])})")
 
 #print to text file
+
 def main():
-    f=open("PyBank.txt", "w+")
+    f=open('/Users/bmacgreg/Documents/Bootcamp/Homework_3/python-challenge/PyBank/Analysis/PyBank.txt', "w+")
     f.write(f"Financial Analysis\r\n")
     f.write(f"---------------------------------------\r\n")
     f.write(f"Total Months: {count}\r\n")
